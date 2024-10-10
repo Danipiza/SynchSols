@@ -1,0 +1,60 @@
+- detach();
+if pthread_detach(_); function is used pthread_exit(0); is needed to be call instead of return 0 in the main
+
+	pthread_t thread;
+	pthread_attr_t attribute;
+	pthread_attr_init(&attribute);
+	// state is joinable (PTHREAD_CREATE_JOINABLE) or detached
+	pthread_attr_setdetachstate(&attribute, PTHREAD_CREATE_DETACHED);
+	
+	pthread_create(&thread, &attribute, &func, NULL);
+	
+	/*
+	this is the same as calling pthread_detach(thread);
+	*/
+	
+	pthread_attr_destroy(&attribute);
+	
+	pthread_attr_set... // there is alot of attributes
+
+- PTHREAD API initializers
+// -- THREADS ------------------------------------------------------------------
+
+// for barriers there isnt
+pthread_mutex_t thread = PTHREAD_MUTEX_INITIALIZER;
+// dont function on arrays
+// pthread_mutex_t thread[5] = PTHREAD_MUTEX_INITIALIZER; X
+pthread_cond_t conditional_var = PTHREAD_COND_INITIALIZER;
+
+// -- MUTEX --------------------------------------------------------------------
+// recursive locks. the same lock can be locked by the same thread multiple times
+// without pausing the execution. the same times the thread had locked the mutex
+// have to unlocks
+
+// usefull for programs with recursive functions in which one thread can 
+// have functions in which the mutex is also lock and unlock
+
+pthread_mutexattr_t mut_attr;
+pthread_mutexattr_init(&mut_attr);
+pthread_mutexattr_settype(&mut_attr, PTHREAD_MUTEX_RECURSIVE);
+
+<code>
+pthread_mutexattr_destroy(&mut_attr);
+
+
+- deadlocks
+when threads are paused because they are waiting for a mutex to unlock but never happen.
+
+example: double lock the same mutex
+	pthread_mutex_lock(mut)
+	pthread_mutex_lock(mut)
+	<code>
+	pthread_mutex_unlock(mut)
+	
+example:
+	if(id%2==0){
+		pthread_mutex_lock(mut1) // half-1 locked here
+		pthread_mutex_lock(mut2) // 1 locked here
+	else
+		pthread_mutex_lock(mut2) // half-1 locked here
+		pthread_mutex_lock(mut1) // 1 locked here
