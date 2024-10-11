@@ -28,7 +28,7 @@ Function to replace four consecutive spaces with a tab
 Args:
     buffer (char*) : Chunk of characters to read.
     length (int)   : Length of the chunk.
-*/
+
 void replace_spaces(char* buffer, int length) {
     char ret[MAX_BUFF_SIZE];
     
@@ -48,7 +48,26 @@ void replace_spaces(char* buffer, int length) {
     // copy the modified string back to the original buffer
     memcpy(buffer, ret, j);
 }
+*/
 
+
+void replace_spaces(char *line) {
+    char result[MAX_BUFF_SIZE];
+    int i=0, j=0;
+    
+    while (line[i]!='\0') {
+        // Check if the next four characters are spaces
+        if (line  [i]==' ' && line[i+1]==' ' && 
+            line[i+2]==' ' && line[i+3]==' ') {
+            result[j++] = '\t'; // Replace with a tab
+            i += 4;             // Skip the four spaces
+        } 
+        else result[j++] = line[i++]; // Copy the character if no match
+    }
+    
+    result[j]='\0'; // Null-terminate the result string
+    strcpy(line, result); // Copy the modified line back to the original line
+}
 
 /*
 Function to re-format a file.
@@ -57,7 +76,7 @@ Args:
     id (int)            : Thread ID.
     input_file (char*)  : Input file name.
     output_file (char*) : Output file name.
-*/
+
 void format_file(int id, char* input_file, char* output_file){
 
     
@@ -95,6 +114,58 @@ void format_file(int id, char* input_file, char* output_file){
     // close file descriptors
     close(input_fd);
     close(output_fd);
+}
+*/
+
+/*
+Function to re-format a file.
+
+Args:
+    id (int)            : Thread ID.
+    input_file (char*)  : Input file name.
+    output_file (char*) : Output file name.
+*/
+void format_file(int id, char* input_file, char* output_file){
+
+    
+    FILE *input_fp  =fopen(input_file, "r");
+    FILE *output_fp =fopen(output_file, "w");
+
+    // -- reading --------------------------------------------------------------
+    if (input_fp==NULL) {
+        perror("Error opening input file");
+        exit(EXIT_FAILURE);
+    }
+
+    // -- writing --------------------------------------------------------------
+    if (output_fp==NULL) {
+        perror("Error opening output file");
+        fclose(input_fp);
+        exit(EXIT_FAILURE);
+    }
+   
+    
+
+    char buffer[MAX_BUFF_SIZE];
+    ssize_t bytes_read;
+
+    
+    
+    char line[MAX_BUFF_SIZE];
+
+        
+    // -- read each row of the input file. -------------------------------------    
+    while (fgets(line, sizeof(line), input_fp) != NULL) {
+        replace_spaces(line); 
+        
+        // write the modified line to the output file
+        fputs(line, output_fp);        
+    }
+
+    
+    // -- close ----------------------------------------------------------------
+    fclose(input_fp);
+    fclose(output_fp);    
 }
 
 /*
