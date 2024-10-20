@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\bin\Debug\net8.0\barriers.exe
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\bin\Debug\net8.0\barriers.deps.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\bin\Debug\net8.0\barriers.runtimeconfig.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\bin\Debug\net8.0\barriers.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\bin\Debug\net8.0\barriers.pdb
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.sourcelink.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\refint\barriers.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.pdb
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\barriers.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\barriers\obj\Debug\net8.0\ref\barriers.dll

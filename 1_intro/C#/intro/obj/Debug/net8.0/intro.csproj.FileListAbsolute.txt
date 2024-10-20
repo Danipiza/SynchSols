@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\bin\Debug\net8.0\intro.exe
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\bin\Debug\net8.0\intro.deps.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\bin\Debug\net8.0\intro.runtimeconfig.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\bin\Debug\net8.0\intro.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\bin\Debug\net8.0\intro.pdb
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.sourcelink.json
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\refint\intro.dll
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.pdb
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\intro.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\GITHUB\SynchSols\1_intro\C#\intro\obj\Debug\net8.0\ref\intro.dll
